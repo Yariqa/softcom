@@ -1,32 +1,120 @@
+* {}
 
+.home-sec {}
 
+.nav-item {}
 
+.nav-link {}
 
+.nav-link {}
 
+.banner-content {}
 
+.banner-content h1 {}
 
+.banner-content h1 span {}
 
+.banner-content p {}
 
+.button-group {}
 
+.button-group a {}
 
+.banner-content {}
 
+.banner-content img {}
 
+.about-sec {}
 
+.about-img {}
 
+.about-img img {}
 
+.about-content {}
 
+.about-content h3 {}
 
+.about-content h2 {}
 
+.about-content p {}
 
+.about-content a {}
 
+.service-sec {}
 
+.sec-title {}
 
+.sec-title h3 {}
 
+.sec-title h2 {}
 
+.card {}
 
+.card .icon {}
 
+.card .icon img {}
 
+.card h3 {}
 
+.card p {}
+
+.card a {}
+
+.card a span {}
+
+.protfolio-sec {}
+
+.portfolio-item {}
+
+.portfolio-item img {}
+
+.portfolio-overlay {}
+
+.portfolio-overlay h3 {}
+
+.portfolio-overlay a {}
+
+.portfolio-overlay a span {}
+
+.testimonials-sec {}
+
+.carousel-item {}
+
+.testimonial-item {}
+
+.testimonial-item img {}
+
+.testimonial-item article {}
+
+.testimonial-item h3 {}
+
+.testimonial-item h5 {}
+
+.carousel-control-prev {}
+
+.carousel-control-prev-icon {}
+
+.carousel-control-next {}
+
+.carousel-control-next-icon {}
+
+.visually-hidden {}
+
+.blog-card {}
+
+.blog-card .image {}
+
+.blog-card .image img {}
+
+.blog-card h2 {}
+
+.blog-card p {}
+
+.blog-card h3 {}
+
+.blog-card a {}
+
+.from-sec {}
 
 /* ************************************************* */
 /* circular progress bar css start from here */
@@ -173,6 +261,7 @@
 .progress[data-percentage="70"] .progress-right .progress-bar {
     animation: loading-5 1.5s linear forwards;
 }
+
 .progress[data-percentage="75"] .progress-right .progress-bar {
     animation: loading-5 1.5s linear forwards;
 }
@@ -180,6 +269,7 @@
 .progress[data-percentage="70"] .progress-left .progress-bar {
     animation: loading-2 1.5s linear forwards 1.5s;
 }
+
 .progress[data-percentage="75"] .progress-left .progress-bar {
     animation: loading-2 1.5s linear forwards 1.5s;
 }
@@ -271,3 +361,90 @@
 .progress {
     margin-bottom: 1em;
 }
+
+/* form-section */
+.contact-form {
+    margin-bottom: 80px;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 36px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ECECEC;
+    background: transparent;
+    border-radius: 2px;
+    color: #808080;
+}
+
+.input-field label {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    padding: 13px 0;
+    font-size: 16px;
+    color: #A7A7A7;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+
+
+.input-field textarea {
+    border: 1px solid #ECECEC;
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 2px;
+    width: 100%;
+    color: #808080;
+}
+
+.input-field input:focus~label,
+.input-field input:valid~label,
+.input-field input:not([value=""])~label {
+    top: -13px;
+    left: 10px;
+    color: #0DC270;
+    font-size: 14px;
+    background-color: white;
+    padding: 0 5px;
+}
+
+.input-field textarea:focus~label,
+.input-field textarea:valid~label,
+.input-field textarea:not([value=""])~label {
+    top: -13px;
+    left: 10px;
+    color: #0DC270;
+    font-size: 14px;
+    background-color: white;
+    padding: 0 5px;
+}
+
+.input-field input:focus,
+.input-field textarea:focus {
+    outline: none;
+    border: 1px solid #0DC270;
+}
+
+
+footer {}
+
+.footer-logo {}
+
+.footer-logo img {}
+
+.footer-widget {}
+
+.footer-widget h2 {}
+
+.footer-widget p {}
+
+.copyright {}
+
+.copyright p {}
