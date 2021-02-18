@@ -15,6 +15,21 @@ a:hover {
     transition: linear .2s;
 }
 
+.btn-theme {
+    font-size: 15px;
+    line-height: 1;
+    background: #27DEBF;
+    color: #fff;
+    padding: 18px 28px;
+    padding-top: 22px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.btn-theme:hover {
+    color: #fff;
+}
+
 /*  */
 
 
@@ -87,7 +102,9 @@ a:hover {
 
 .banner-content img {}
 
-.about-sec {}
+.about-sec {
+    margin-bottom: 180px;
+}
 
 .about-img {}
 
@@ -99,11 +116,18 @@ a:hover {
 
 .about-content h2 {}
 
-.about-content p {}
+.about-content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #151D41;
+}
 
 .about-content a {}
 
-.service-sec {}
+.service-sec {
+    margin-bottom: 150px;
+}
 
 .sec-title {}
 
@@ -111,29 +135,50 @@ a:hover {
     color: #27DEBF;
     font-size: 20px;
     font-weight: 400;
-    line-height: 108px;
-    text-align: center;
+    line-height: 1;
+    margin-bottom: 28px;
 }
 
 .sec-title h2 {
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 50px;
     color: #151D41;
-    text-align: center;
+    margin-bottom: 32px;
 }
 
-.card {}
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 20px 20px #7682b72e;
+    border: none;
+    padding: 55px 40px;
+    padding-bottom: 45px;
+    margin: 20px;
+}
 
-.card .icon {}
+.card .icon {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #27DEBF;
+    border-radius: 50%;
+    margin-bottom: 36px;
+}
 
-.card .icon img {}
+.card .icon img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .card h3 {
     color: #151D41;
     font-size: 33px;
     line-height: 42px;
     font-weight: 600;
+    margin-bottom: 15px;
 }
 
 .card p {
@@ -141,26 +186,109 @@ a:hover {
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
+    margin-bottom: 40px;
 }
 
-.card a {}
+.card a {
+    display: inline-table;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #27DEBF;
+    padding: 6px 25px;
+    padding-top: 10px;
+}
 
-.card a span {}
+.card a span {
+    margin-left: 10px;
+}
+
+.card h2 {
+    font-size: 45px;
+    line-height: 54px;
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: #151D41;
+}
+
+.card h4 {
+    color: #151D41;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 36px;
+}
+
+.card h5 {
+    color: #686868;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.progress-bar-line {}
+
+.progress-bar-line SPAN {}
 
 .protfolio-sec {}
 
-.portfolio-item {}
+.portfolio-item {
+    overflow: hidden;
+    position: relative;
+    transition: linear .3s;
+}
 
-.portfolio-item img {}
+.portfolio-overlay {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #27DEBF;
+    transition: linear .3s;
+}
 
-.portfolio-overlay {}
+.portfolio-item img {
+    width: 100%;
+}
 
-.portfolio-overlay h3 {}
+.portfolio-content {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: scale(0) translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    transition: linear .3s;
+}
 
-.portfolio-overlay a {}
+.portfolio-content h3 {
+    font-size: 25px;
+    line-height: 30px;
+    color: #fff;
+}
 
-.portfolio-overlay a span {}
+.portfolio-content a {}
 
+.portfolio-content a span {
+    color: #fff;
+    font-size: 22px;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 30px;
+    margin: 10px;
+    display: inline-block;
+}
+.portfolio-item:hover .portfolio-content{
+    top: 0%;
+    transition: linear .3s;
+}
+.portfolio-item:hover .portfolio-overlay{
+    transform: scale(1) translate(-50%, -50%);
+    transition: linear .3s;
+}
 .testimonials-sec {}
 
 .carousel-item {}
@@ -204,25 +332,33 @@ a:hover {
 /* ************************************************* */
 /* circular progress bar css start from here */
 /* ************************************************* */
+
+.skills-sec {
+    margin-bottom: 180px;
+}
+
+.skill-item {}
+
 .progress {
     width: 150px;
     height: 150px;
     line-height: 150px;
     background: none;
     margin: 0 auto;
-    box-shadow: none;
     position: relative;
+    box-shadow: 0 15px 20px #151d410f;
+    border-radius: 50%;
 }
 
 .progress:after {
     content: "";
-    width: 100%;
-    height: 100%;
     border-radius: 50%;
-    border: 7px solid #eee;
+    border: 2px solid #0fbd6033;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 7px;
+    left: 7px;
+    right: 7px;
+    bottom: 7px;
 }
 
 .progress>span {
@@ -246,7 +382,7 @@ a:hover {
     border-style: solid;
     position: absolute;
     top: 0;
-    border-color: #ffb43e;
+    border-color: #27DEBF;
 }
 
 .progress .progress-left .progress-bar {
@@ -281,15 +417,22 @@ a:hover {
     justify-content: center;
     height: 100%;
     font-weight: 300;
+    width: 100%;
 }
 
 .progress .progress-value div {
     margin-top: 10px;
+    color: #151D41;
+    font-size: 36px;
+    font-weight: 700;
+    /*! line-height: 1; */
 }
 
 .progress .progress-value span {
-    font-size: 12px;
+    font-size: 10px;
     text-transform: uppercase;
+    line-height: 1;
+    font-weight: 600;
 }
 
 /* This for loop creates the 	necessary css animation names 
@@ -443,9 +586,7 @@ a:hover {
     }
 }
 
-.progress {
-    margin-bottom: 1em;
-}
+.progress {}
 
 /* form-section */
 .contact-form {
