@@ -373,7 +373,7 @@ a:hover {
 }
 
 .testimonials-sec {
-    margin: 180px 0;
+    margin-top: 180px;
 }
 
 .carousel-item {}
@@ -432,7 +432,12 @@ a:hover {
 }
 
 .blog-sec {
-    padding-bottom: 180px;
+    padding: 180px 0;
+    background-image: url(../image/blog-bg.svg);
+    background-size: contain;
+    background-position: center right;
+    background-repeat: no-repeat;
+
 }
 
 .blog-card {}
@@ -441,14 +446,43 @@ a:hover {
 
 .blog-card .image img {}
 
-.blog-card h2 {}
+.blog-card h2 {
+    color: #27DEBF;
+    font-size: 18px;
+    line-height: 35px;
+    font-weight: 600;
+}
 
-.blog-card p {}
+.blog-card p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #151D41;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 2;
+}
 
-.blog-card h3 {}
+.blog-card h3 {
+    color: #151D41;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 1;
+}
 
-.blog-card a {}
-
+.blog-card a {font-size: 18px;line-height: 35px;font-weight: 400;color: #27DEBF;}
+.blog-card a span{
+    margin-left: 10px;
+}
 .from-sec {}
 
 /* ************************************************* */
@@ -557,9 +591,6 @@ a:hover {
     font-weight: 600;
 }
 
-/* This for loop creates the 	necessary css animation names 
-  Due to the split circle of progress-left and progress right, we must use the animations on each side. 
-  */
 .progress[data-percentage="10"] .progress-right .progress-bar {
     animation: loading-1 1.5s linear forwards;
 }
