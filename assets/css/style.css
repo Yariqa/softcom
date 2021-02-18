@@ -119,13 +119,45 @@ a:hover {
 
 .about-sec {
     margin-bottom: 180px;
+    padding-top: 120px;
 }
 
-.about-img {}
+.about-img {
+    position: relative;
+}
 
-.about-img img {}
+.about-img:before {
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 33px solid #27DEBF;
+    top: -80px;
+    left: 0;
+    z-index: 2;
+}
 
-.about-content {}
+.about-img::after {
+    content: url(../image/about-partten.svg);
+    position: absolute;
+    width: 160px;
+    height: 190px;
+    top: -20px;
+    right: 30px;
+}
+
+.about-img img {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.about-content {
+    padding-top: 80px;
+}
 
 .about-content h3 {}
 
@@ -440,17 +472,34 @@ a:hover {
 
 }
 
-.blog-card {}
+.blog-card {
+    background-color: #fff;
+    border-radius: 5px;
+    height: 100%;
+}
 
 .blog-card .image {}
 
-.blog-card .image img {}
+.blog-card-content {
+    background-color: #fff;
+    box-shadow: 0 15px 20px #7682b72e;
+    border-radius: 5px;
+    padding: 25px 30px;
+    position: relative;
+    top: -30px;
+}
+
+.blog-card .image img {
+    width: 100%;
+    border-radius: 5px;
+}
 
 .blog-card h2 {
     color: #27DEBF;
     font-size: 18px;
     line-height: 35px;
     font-weight: 600;
+    margin-bottom: 8px;
 }
 
 .blog-card p {
@@ -464,6 +513,7 @@ a:hover {
     text-overflow: ellipsis;
     white-space: normal;
     -webkit-line-clamp: 2;
+    margin-bottom: 32px;
 }
 
 .blog-card h3 {
@@ -477,13 +527,23 @@ a:hover {
     text-overflow: ellipsis;
     white-space: normal;
     -webkit-line-clamp: 1;
+    margin-bottom: 56px;
 }
 
-.blog-card a {font-size: 18px;line-height: 35px;font-weight: 400;color: #27DEBF;}
-.blog-card a span{
+.blog-card a {
+    font-size: 18px;
+    line-height: 35px;
+    font-weight: 400;
+    color: #27DEBF;
+}
+
+.blog-card a span {
     margin-left: 10px;
 }
-.from-sec {}
+
+.from-sec {
+    margin-bottom: 180px;
+}
 
 /* ************************************************* */
 /* circular progress bar css start from here */
@@ -814,11 +874,25 @@ a:hover {
 
 footer {}
 
+footer h3 {
+    color: #151D41;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 33px;
+    margin-bottom: 25px;
+}
+
 .footer-logo {}
 
-.footer-logo img {}
+.footer-logo img {
+    width: 120px;
+}
 
-.footer-widget {}
+.footer-widget p {
+    color: #151D41;
+    line-height: 26px;
+    font-weight: 400;
+}
 
 .footer-widget h2 {
     color: #27DEBF;
@@ -827,8 +901,20 @@ footer {}
     font-weight: 600;
 }
 
+.footer-widget {}
+
 .footer-widget p {}
 
-.copyright {}
+.copyright {
+    padding: 26px 0;
+    margin-top: 40px;
+    border-top: 1px solid #27DEBF;
+}
 
-.copyright p {}
+.copyright p {
+    margin: 0;
+    color: #151D41;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+}
