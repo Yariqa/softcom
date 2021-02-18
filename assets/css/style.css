@@ -553,17 +553,16 @@ a:hover {
     margin-bottom: 180px;
 }
 
-.skill-item {}
+.skill-item {background: #fff;box-shadow: 0 15px 20px #151d410f;border-radius: 50%;width: 185px;height: 185px;margin: auto;}
 
 .progress {
     width: 150px;
     height: 150px;
     line-height: 150px;
     background: none;
-    margin: 0 auto;
     position: relative;
-    box-shadow: 0 15px 20px #151d410f;
-    border-radius: 50%;
+    top: 17px;
+    left: 17px;
 }
 
 .progress:after {
