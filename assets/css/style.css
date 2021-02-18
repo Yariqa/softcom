@@ -9,7 +9,7 @@
 
 
 /*  */
-button{
+button {
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -34,7 +34,10 @@ a:hover {
     color: #fff;
 }
 
-.btn-send {border: none;font-size: 18px;}
+.btn-send {
+    border: none;
+    font-size: 18px;
+}
 
 .btn-send:hover {}
 
@@ -163,6 +166,7 @@ a:hover {
     padding: 55px 40px;
     padding-bottom: 45px;
     margin: 20px;
+    transition: linear .2s;
 }
 
 .card .icon {
@@ -233,7 +237,10 @@ a:hover {
     font-weight: 400;
     line-height: 1;
 }
-
+.card:hover{
+    background-color: #27DEBF;
+    transition: linear .2s;
+}
 .progress-bar-line {}
 
 .progress-bar-line SPAN {}
@@ -265,11 +272,13 @@ a:hover {
     z-index: 2;
     top: 50%;
     left: 50%;
-    transform: scale(0) translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
     width: 100%;
     padding: 15px;
+    opacity: 0;
     transition: linear .3s;
+    animation-delay: .2s;
 }
 
 .portfolio-content h3 {
@@ -291,12 +300,13 @@ a:hover {
 }
 
 .portfolio-item:hover .portfolio-content {
-    top: 0%;
+    opacity: 1;
     transition: linear .3s;
+    animation-delay: .2s;
 }
 
 .portfolio-item:hover .portfolio-overlay {
-    transform: scale(1) translate(-50%, -50%);
+    top: 0%;
     transition: linear .3s;
 }
 
