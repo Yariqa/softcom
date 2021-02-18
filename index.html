@@ -52,7 +52,7 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span class="ti-menu" style="color: #101010;"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -484,7 +484,7 @@
     <!-- contact form start from here -->
     <section class="from-sec">
         <div class="container">
-            <div class="sec-title">
+            <div class="sec-title text-center mb-3 pb-1">
                 <h3>CONTACT ME</h3>
                 <h2>Send Us a Message</h2>
             </div>
@@ -509,28 +509,28 @@
                                 </div>
                                 <div class="col-md-6 col-sm-6">
                                     <div class="input-field">
-                                        <input type="text" id="company" name="company"
-                                            onkeyup="this.setAttribute('value', this.value);" value="" required=""
-                                            class=""><label for="company">Company</label>
+                                        <input type="tel" name="phone" id="phone"
+                                            onkeyup="this.setAttribute('value', this.value);" value=""
+                                            required=""><label for="phone">Phone</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
                                     <div class="input-field">
-                                        <input type="tel" name="phone" id="phone"
-                                            onkeyup="this.setAttribute('value', this.value);" value=""
-                                            required=""><label for="phone">Phone</label>
+                                        <input type="text" id="budget" name="budget"
+                                            onkeyup="this.setAttribute('value', this.value);" value="" required=""
+                                            class=""><label for="budget">Budget</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="input-field">
                                         <textarea name="message" id="message" rows="6"
                                             onkeyup="this.setAttribute('value', this.value);" value="" required=""
-                                            class=""></textarea><label for="message">Your message</label>
+                                            class=""></textarea><label for="message">Message</label>
                                     </div>
                                 </div>
                             </div>
-                            <div class="text-md-right">
-                                <button type="submit" name="btn-send" class="primary-btn" role="button">Send
+                            <div class="text-center my-5">
+                                <button type="submit" name="btn-send" class="btn-theme btn-send" role="button">Send
                                     Message</button>
                             </div>
                         </form>

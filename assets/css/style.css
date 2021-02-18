@@ -9,6 +9,10 @@
 
 
 /*  */
+button{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 a,
 a:hover {
     text-decoration: none;
@@ -29,6 +33,10 @@ a:hover {
 .btn-theme:hover {
     color: #fff;
 }
+
+.btn-send {border: none;font-size: 18px;}
+
+.btn-send:hover {}
 
 /*  */
 
@@ -281,14 +289,17 @@ a:hover {
     margin: 10px;
     display: inline-block;
 }
-.portfolio-item:hover .portfolio-content{
+
+.portfolio-item:hover .portfolio-content {
     top: 0%;
     transition: linear .3s;
 }
-.portfolio-item:hover .portfolio-overlay{
+
+.portfolio-item:hover .portfolio-overlay {
     transform: scale(1) translate(-50%, -50%);
     transition: linear .3s;
 }
+
 .testimonials-sec {}
 
 .carousel-item {}
@@ -604,7 +615,7 @@ a:hover {
     font-size: 16px;
     border: 1px solid #ECECEC;
     background: transparent;
-    border-radius: 2px;
+    border-radius: 5px;
     color: #808080;
 }
 
@@ -635,7 +646,7 @@ a:hover {
 .input-field input:not([value=""])~label {
     top: -13px;
     left: 10px;
-    color: #0DC270;
+    color: #151D41;
     font-size: 14px;
     background-color: white;
     padding: 0 5px;
@@ -646,7 +657,7 @@ a:hover {
 .input-field textarea:not([value=""])~label {
     top: -13px;
     left: 10px;
-    color: #0DC270;
+    color: #151D41;
     font-size: 14px;
     background-color: white;
     padding: 0 5px;
@@ -655,7 +666,7 @@ a:hover {
 .input-field input:focus,
 .input-field textarea:focus {
     outline: none;
-    border: 1px solid #0DC270;
+    border: 1px solid #151D41;
 }
 
 
