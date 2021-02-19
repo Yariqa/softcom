@@ -34,6 +34,8 @@
         box-shadow: 0 15px 20px #151d410f;
         border-radius: 50%;
         margin: auto;
+        left: auto;
+        top: auto;
     }
 
     .card {
