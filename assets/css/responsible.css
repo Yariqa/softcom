@@ -1,5 +1,10 @@
 /* // X-Large devices (large desktops, less than 1400px) */
-@media (max-width: 1399.98px) {}
+@media (max-width: 1399.98px) {
+    .skills-sec .col-md-8.offset-md-2 {
+        width: 100%;
+        margin: auto;
+    }
+}
 
 /* // Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {}
@@ -9,10 +14,55 @@
     .nav-link {
         line-height: 32px;
     }
+
+    .about-img img {
+        padding: 0;
+    }
+
+    .about-content {
+        padding: 0;
+    }
+
+    .skill-item {
+        box-shadow: none;
+        border-radius: 50%;
+        width: auto;
+        height: auto;
+    }
+
+    .progress {
+        box-shadow: 0 15px 20px #151d410f;
+        border-radius: 50%;
+        margin: auto;
+    }
+
+    .card {
+        margin: 10px;
+    }
 }
 
 /* // Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+    .banner-img {
+        padding-top: 120px;
+    }
+
+    .banner {
+        padding-bottom: 150px;
+    }
+
+    .about-content {
+        margin-top: 80px;
+    }
+
+    .portfolio-item {
+        margin-bottom: 30px;
+    }
+
+    .footer-logo {
+        margin-bottom: 30px;
+    }
+}
 
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {}

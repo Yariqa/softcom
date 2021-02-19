@@ -9,6 +9,11 @@
 
 
 /*  */
+html,
+body {
+    overflow-x: hidden;
+}
+
 button {
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -43,7 +48,11 @@ a:hover {
 
 /*  */
 
-
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1100;
+}
 .home-sec {
     background-image: url(../image/home-bg.svg);
     background-repeat: no-repeat;
@@ -68,7 +77,7 @@ a:hover {
 }
 
 .banner {
-    padding-top: 150px;
+    padding-top: 200px;
     padding-bottom: 300px;
 }
 
@@ -93,6 +102,10 @@ a:hover {
     color: #455A64;
     margin-top: 0px;
     margin-bottom: 55px;
+}
+
+.banner-img img {
+    width: 100%
 }
 
 .button-group {}
@@ -553,7 +566,14 @@ a:hover {
     margin-bottom: 180px;
 }
 
-.skill-item {background: #fff;box-shadow: 0 15px 20px #151d410f;border-radius: 50%;width: 185px;height: 185px;margin: auto;}
+.skill-item {
+    background: #fff;
+    box-shadow: 0 15px 20px #151d410f;
+    border-radius: 50%;
+    width: 185px;
+    height: 185px;
+    margin: auto;
+}
 
 .progress {
     width: 150px;
@@ -916,4 +936,9 @@ footer h3 {
     font-size: 18px;
     font-weight: 400;
     line-height: 1;
+}
+
+.sticky {
+    background-color: #fff;
+    box-shadow: 0 15px 20px #151d410f;
 }
