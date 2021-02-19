@@ -39,6 +39,9 @@
     .card {
         margin: 10px;
     }
+    #navbarSupportedContent{
+        background-color: #fff;
+    }
 }
 
 /* // Small devices (landscape phones, less than 768px) */
