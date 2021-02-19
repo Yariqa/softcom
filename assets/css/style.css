@@ -48,11 +48,12 @@ a:hover {
 
 /*  */
 
-header{
+header {
     position: fixed;
     width: 100%;
     z-index: 1100;
 }
+
 .home-sec {
     background-image: url(../image/home-bg.svg);
     background-repeat: no-repeat;
