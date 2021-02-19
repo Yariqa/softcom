@@ -190,6 +190,22 @@ header {
     margin-bottom: 150px;
 }
 
+.service-sec .row {
+    position: relative;
+}
+
+.service-sec .row::before {
+    position: absolute;
+    content: "";
+    background-image: url(../image/about-partten.svg);
+    background-repeat: repeat;
+    background-position: 0 0;
+    height: 300px;
+    width: 250px;
+    bottom: 120px;
+    right: -30px;
+}
+
 .sec-title {}
 
 .sec-title h3 {
@@ -198,6 +214,20 @@ header {
     font-weight: 400;
     line-height: 1;
     margin-bottom: 28px;
+    position: relative;
+}
+
+.sec-title h3::before {
+    position: absolute;
+    content: "";
+    background-color: #0FBF61;
+    opacity: .1;
+    height: 15px;
+    width: 130px;
+    border-radius: 10px;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .sec-title h2 {
@@ -206,6 +236,30 @@ header {
     line-height: 50px;
     color: #151D41;
     margin-bottom: 32px;
+    position: relative;
+}
+
+.sec-title h2::before {
+    position: absolute;
+    content: "";
+    background-color: #0FBF61;
+    opacity: .1;
+    height: 15px;
+    width: 320px;
+    border-radius: 10px;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%, 0)
+}
+
+.about-content h3::before {
+    left: 0%;
+    transform: translate(0, 0);
+    width: 90px;
+}
+
+.about-content h2::before {
+    display: none;
 }
 
 .card {
@@ -420,6 +474,10 @@ header {
 
 .testimonials-sec {
     margin-top: 180px;
+    background-image: url(../image/TESTIMONIALS\ bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
 }
 
 .carousel-item {}
@@ -427,7 +485,6 @@ header {
 .testimonial-item {
     max-width: 750px;
     margin: auto;
-    background-color: #fff;
 }
 
 .testimonial-item img {
@@ -556,7 +613,11 @@ header {
 }
 
 .from-sec {
-    margin-bottom: 180px;
+    padding-top: 200px;
+    background-image: url(../image/map-55e32ae4c19a85738ebb72d3172e3ab7.png);
+    background-repeat: no-repeat;
+    background-size: 650px;
+    background-position: center top;
 }
 
 /* ************************************************* */
@@ -822,9 +883,7 @@ header {
 .progress {}
 
 /* form-section */
-.contact-form {
-    margin-bottom: 80px;
-}
+.contact-form {}
 
 .input-field {
     position: relative;
@@ -892,7 +951,25 @@ header {
 }
 
 
-footer {}
+footer {
+    position: relative;
+    padding-top: 300px;
+    background-image: url(../image/footer-bg.svg);
+    background-size: contain;
+    background-position: center center;
+}
+
+footer::before {
+    position: absolute;
+    content: "";
+    background-image: url(../image/about-partten.svg);
+    background-repeat: repeat;
+    background-position: 0 0;
+    height: 300px;
+    width: 250px;
+    top: -120px;
+    left: -120px;
+}
 
 footer h3 {
     color: #151D41;
@@ -927,7 +1004,7 @@ footer h3 {
 
 .copyright {
     padding: 26px 0;
-    margin-top: 40px;
+    margin-top: 80px;
     border-top: 1px solid #27DEBF;
 }
 
